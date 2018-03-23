@@ -1,0 +1,91 @@
+@import "_variables";
+@import "components/_category";
+@import "components/_flex";
+@import "components/_uk-table";
+@import "components/_navigation";
+@import "components/_pagination";
+@import "components/_header";
+@import "components/_footer";
+@import "components/_modal";
+* {
+  box-sizing: border-box;
+}
+input[type='text'], input[type='password'] {
+  appearance: none;
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari 和 Chrome */
+}
+input::-ms-clear{display:none;}
+input[type="password"]::-ms-reveal{display:none;}
+
+article,
+aside,
+blockquote,
+body,
+button,
+code,
+dd,
+details,
+div,
+dl,
+dt,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+hr,
+input,
+legend,
+li,
+menu,
+nav,
+ol,
+p,
+pre,
+section,
+td,
+textarea,
+th,
+ul {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+.ft-red {
+  color: @red;
+}
+.gz-notify1{
+      max-width: 100vw;
+      min-width: 20vw;
+      position: fixed;
+      margin: auto;
+      padding: 14px;
+      left: 0;
+      right: 0;
+      top: -10vh;
+      border-radius: 3px;
+      color: #fff;
+      text-align: center;
+      font-size: 12px;
+      background-color: rgba(0,0,0,.7);
+      overflow: hidden;
+      opacity: 0;
+      z-index: 1000;
+      transition: .3s;
+}
+.gz-notify--show1{
+  opacity: 1;
+  top: 10vh;
+}

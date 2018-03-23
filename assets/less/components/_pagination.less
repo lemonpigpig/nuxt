@@ -1,0 +1,52 @@
+.pagination {
+  &__page {
+    line-height: 24px;
+    padding: 0 10px;
+    border: solid 1px @gray-lighten;
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 14px;
+    color: @gray-dark;
+    cursor: pointer;
+    background-color: #fff;
+
+    &:hover {
+      color: @red;
+      border-color: @red;
+    }
+
+    &--current {
+      background-color: @red;
+      border-color: @red;
+      color: #fff;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+
+    &--nomargin {
+      margin-left: 0;
+    }
+  }
+
+  &__text {
+    line-height: 26px;
+    padding: 0 10px;
+    display: inline-block;
+    font-size: 14px;
+    color: @gray-dark;
+  }
+
+  &__input {
+    line-height: 24px;
+    border: solid 1px @gray-lighten;
+    display: inline-block;
+    font-size: 14px;
+    color: @gray-dark;
+    width: 30px;
+    height: 24px;
+    padding: 0;
+    text-align: center;
+  }
+}

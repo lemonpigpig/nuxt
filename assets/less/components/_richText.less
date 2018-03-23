@@ -1,0 +1,37 @@
+.richText-columns(@columns) {
+    .gz-rich-text-viewer-col {
+        width: 100% / @columns;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.gz-rich-text-viewer-pro {
+    width: 100%;
+    position: relative;
+
+  .gz-rich-text-viewer-row {
+      position: relative;
+      width: 100%;
+
+      &:after {
+          content: '';
+          display: table;
+          clear: both;
+      }
+
+      .gz-rich-text-viewer-col {
+          position: relative;
+          border: 1px dashed #eee;
+          color: #333;
+          line-height: 40px;
+          font-weight: bolder;
+          background-color: #fff;
+          float: left;
+          min-height: 80px;
+      }
+  }
+
+}

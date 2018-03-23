@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="250px" height="190px" viewBox="0 0 250 190" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-15.0%" y="-22.4%" width="130.0%" height="144.8%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="10" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="12-1我的优惠券-未使用" transform="translate(-572.000000, -903.000000)">
+            <g id="Group-4" transform="translate(597.000000, 921.000000)">
+                <rect id="Rectangle-6" fill="#CCCCCC" filter="url(#filter-1)" x="0" y="7" width="200" height="134"></rect>
+                <path d="M52,8.53900709 L0,8.53900709 L0,172 L200,172 L200,8.53900709 L59,8.53900709 L55.5,0 L52,8.53900709 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

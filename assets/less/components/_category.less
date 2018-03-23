@@ -1,0 +1,315 @@
+.category {
+  background-color: @gray-shade;
+  padding: 35px 0;
+
+  &__no-data {
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+    margin: 75px auto 175px;
+
+    .gz-icon {
+      color: #FF8D00;
+      margin: 4px 20px;
+      float: left;
+    }
+  }
+
+  &__location {
+    font-size: 12px;
+    line-height: 20px;
+    width: 100%;
+
+    .location {
+      &__links {
+        white-space: nowrap;
+        padding-bottom: 18px;
+        float: left;
+      }
+
+      &__link {
+        text-decoration: none;
+        color: @gray;
+      }
+
+      &__name {
+        margin: 2px 8px;
+      }
+
+      &__conditions {
+        float: left;
+        width: 960px;
+      }
+
+      &__condition {
+        margin: 0 0 18px 20px;
+        background-color: #fff;
+        border: 1px solid @gray;
+        color: @gray;
+        line-height: 18px;
+        padding: 0 21px 0 6px;
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+
+        &:hover {
+          border-color: @red;
+          color: @red;
+
+          .location__close {
+            color: #fff;
+            background-color: @red;
+          }
+        }
+      }
+
+      &__close {
+        color: @red;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 18px;
+        height: 18px;
+        box-sizing: border-box;
+        padding: 3px 0 0 5px;
+      }
+
+      &__cancel {
+        color: @black;
+        border: 1px solid @gray;
+        line-height: 18px;
+        padding: 0 10px;
+        text-align: center;
+        float: right;
+        cursor: pointer;
+        width: 51px;
+        margin-left: 20px;
+        box-sizing: content-box; // reset * ，建议不要用 *
+      }
+    }
+  }
+
+  &__search {
+    background-color: @gray-border;
+    line-height: 46px;
+    font-size: 16px;
+    padding: 0 20px;
+
+    .search {
+      &__icon {
+        margin-top: 16px;
+        float: left;
+      }
+
+      &__keyword {
+        color: @red;
+        font-weight: 500;
+      }
+      &__info {
+          margin-left: 30px;
+          color: @red;
+          font-size: 14px;
+        	line-height: 1.57;
+        	text-align: justify;
+      }
+
+      &__tip {
+        float: left;
+        margin: 0 0 10px 30px;
+      }
+
+      &__suggest {
+        color: @black-lighten;
+        line-height: 14px;
+        font-size: 12px;
+      }
+    }
+  }
+
+  &__filter {
+    color: @gray;
+    font-size: 14px;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid @gray-border;
+    border-top: 1px solid @gray-border;
+
+    .filter {
+      &__item {
+        margin-bottom: 18px;
+        line-height: 20px;
+        height: 20px;
+        overflow: hidden;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      &__element {
+        font-size: 12px;
+        color: @black;
+        cursor: pointer;
+        margin-right: 20px;
+        white-space: nowrap;
+        word-wrap: normal;
+        word-break: normal;
+        display: inline-block;
+
+        &:hover,
+        &--current {
+          color: @red;
+        }
+      }
+
+      &__title {
+        float: left;
+        margin-right: 20px;
+      }
+
+      &__condition {
+        float: left;
+        width: 1080px;
+        max-height: 67px;
+        overflow: visible;
+      }
+
+      &__more {
+        color: @black;
+        border: 1px solid @gray;
+        line-height: 18px;
+        padding: 0 6px;
+        text-align: center;
+        float: right;
+        cursor: pointer;
+        font-size: 12px;
+
+        .gz-icon {
+          float: right;
+          margin: 4px 0 0 6px;
+        }
+      }
+    }
+  }
+
+  &__header {
+    background-color: @red;
+    color: #fff;
+    font-size: 14px;
+    line-height: 36px;
+  }
+
+  &__choice {
+    width: 184px;
+    float: left;
+    background-color: #fff;
+
+    .category__no-data {
+      text-align: left;
+    }
+
+    .choice {
+      background-color: #fff;
+      padding: 0 8px;
+      display: flow-root;
+
+      &__item {
+        list-style: none;
+        padding-top: 25px;
+        border-bottom: 1px solid @gray-lightener;
+        margin-bottom: 25px;
+        cursor: pointer;
+      }
+
+      &__img {
+        width: 120px;
+        height: 120px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin: 0 auto;
+        margin-bottom: 1px;
+      }
+
+      &__title {
+        color: @black;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 600;
+      }
+
+      &__desc {
+        font-size: 12px;
+        color: @gray;
+        line-height: 17px;
+        margin-bottom: 13px;
+      }
+
+      &__price {
+        margin-bottom: 10px;
+        line-height: 18px;
+        color: @red;
+      }
+    }
+  }
+
+  &__goods {
+    float: right;
+    width: 996px;
+    background-color: #fff;
+
+    .goods {
+      display: flex;
+      flex-wrap: wrap;
+
+      &__item {
+        &:first-child .goods-item-cell {
+          margin-left: -1px;
+        }
+      }
+    }
+  }
+
+  &__pagination {
+    text-align: center;
+    margin: 67px 0;
+  }
+
+  &__recommend {
+    margin-top: 76px;
+    margin-bottom: 20px;
+  }
+
+  &__order {
+    padding: 0 10px;
+
+    .order {
+      &__current {
+        color: #e3ceab;
+      }
+
+      &__item {
+        cursor: pointer;
+        margin-left: 28px;
+        position: relative;
+        display: inline-block;
+      }
+
+      &__up {
+        position: absolute;
+        left: 32px;
+        top: 12px;
+      }
+
+      &__down {
+        position: absolute;
+        left: 32px;
+        bottom: 12px;
+      }
+    }
+  }
+  &__margin {
+    margin-bottom: 15px;
+  }
+}

@@ -1,0 +1,6 @@
+.make-cols(@columns, @i: 1) when (@i <= @columns) {
+  .make-cols(@columns, @i + 1);
+  .col-@{i} {
+    width: 100% / @columns * @i;
+  }
+}

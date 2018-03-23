@@ -1,0 +1,115 @@
+html, body
+{
+  background-color: white;
+  color: #000;
+  letter-spacing: 0.5px;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  height: 100vh;
+  margin: 0;
+}
+
+footer
+{
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  max-height: 289px;
+}
+
+article,
+aside,
+blockquote,
+body,
+button,
+code,
+dd,
+details,
+div,
+dl,
+dt,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+hr,
+input,
+legend,
+li,
+menu,
+nav,
+ol,
+p,
+pre,
+section,
+td,
+textarea,
+th,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+input,
+select,
+textarea {
+    border: none;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+.rec:before {
+    content: '';
+    width: "20px";
+    height: "20px";
+}
+
+a {
+    text-decoration: none;
+    color: #3d3d3d;
+    &:active,
+    &:hover,
+    &:link,
+    &:visited {
+        text-decoration: none;
+    }
+}
+
+.confirmBox button {
+    border: none;
+    margin-top: 23px;
+    width: 340px;
+    height: 50px;
+    background-color: #ff4544;
+    color: #fff;
+    font-size: 16px;
+    margin: 0 auto;
+}
+.FwdconfirmBox button {
+    width: 400px;
+}
+.confirmBox .disabled {
+    background:  #f2f2f2;
+    color: #333;
+}

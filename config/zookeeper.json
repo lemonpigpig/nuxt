@@ -1,0 +1,14 @@
+{
+  "appInfo": {
+    "group": "xxx",
+    "name": "xxx",
+    "version": "1.1.0",
+    "displayName": "xxxx"
+  },
+  "zookeeper": {
+    "servers": "xxxxx",
+    "sessionTimeout": 3000,
+    "connectTimeout": 1000,
+    "env": "development"
+  }
+}
