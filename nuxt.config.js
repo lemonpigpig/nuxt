@@ -14,12 +14,12 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: '国资商城',
+    title: 'xxx',
     meta: [
       {charset: 'utf-8'},
       {name: 'viewport', content: 'width=1200, initial-scale=1'},
-      {hid: 'Description', name: 'Description', content: '国资商城'},
-      {hid: 'Keywords', name: 'Keywords', content: '国资商城'},
+      {hid: 'Description', name: 'Description', content: 'xxx'},
+      {hid: 'Keywords', name: 'Keywords', content: 'xxx'},
       {'http-equiv': 'X-UA-Compatible', content: 'IE=edge'}
     ],
     link: [
